@@ -1,5 +1,4 @@
-The AirBnB Clone Project
-AirBnB Logo
+# The AirBnB Clone Project
 
 Project Description
 This is the first part of the AirBnB clone project where we worked on the backend of the project whiles interfacing it with a console application with the help of the cmd module in python.
@@ -31,7 +30,7 @@ These instructions will get you a copy of the project up and running on your loc
 Installing
 You will need to clone the repository of the project from Github. This will contain the simple shell program and all of its dependencies.
 
-git clone https://github.com/NwangwuChidera/AirBnB_clone.git
+git clone https://github.com/Digho007/AirBnB_clone.git
 After cloning the repository you will have a folder called AirBnB_clone. In here there will be several files that allow the program to work.
 
 /console.py : The main executable of the project, the command interpreter.
@@ -143,6 +142,8 @@ Usage	update <class name> <id> <attribute name> "<attribute value>" ---or--- <cl
 -----	-----
 count	Retrieve the number of instances of a class.
 Usage	<class name>.count()
+
+
 Authors
 
 Dighomanor Jeremiah | Email: <dighomanorjeremiah@gmail.com>
