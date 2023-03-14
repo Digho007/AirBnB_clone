@@ -19,7 +19,7 @@ class BaseModel:
             - **kwargs: dict of key-values arguments
         """
 
-        if kwargs:
+        if kwargs is not None and kwargs != {}:
             for key in kwargs:
                 if key == "created_at":
                     self.__dict__["created_at"] = datetime.strptime(
@@ -31,7 +31,7 @@ class BaseModel:
                     self.__dict__[key] = kwargs[key]
         else:
             self.id = str(uuid.uuid4())
-            self.created_at = dtetime.now()
+            self.created_at = datetime.now()
             self.updated_at = datetime.now()
             storage.new(self)
 
@@ -56,4 +56,4 @@ class BaseModel:
         my_dict["__class__"] = type(self).__name__
         my_dict["created_at"] = my_dict["created_at"].isoformat()
         my_dict["updated_at"] = my_dict["updated_at"].isoformat()
-        return my_dicta
+        return my_dict
